@@ -1,4 +1,12 @@
-# React with Tailwind CSS    <a href="https://idx.google.com/new?template=https%3A%2F%2Fgithub.com%2Fefrimm%2Freact-idx-template">
+# React with Tailwind CSS
+
+This is a starter template in React, for building web sites with these technologies:
+
+- [React](https://react.dev/): web app framework
+- [Tailwind CSS](https://tailwindcss.com/): for styling
+- [Vite](https://vitejs.dev/): Development server and toolchain
+
+<a href="https://idx.google.com/new?template=https%3A%2F%2Fgithub.com%2Fefrimm%2Freact-idx-template">
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
@@ -12,9 +20,3 @@
       src="https://cdn.idx.dev/btn/open_purple_32.svg">
   </picture>
 </a>
-
-This is a starter template in React, for building web sites with these technologies:
-
-- [React](https://react.dev/): web app framework
-- [Tailwind CSS](https://tailwindcss.com/): for styling
-- [Vite](https://vitejs.dev/): Development server and toolchain
