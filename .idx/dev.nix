@@ -25,11 +25,11 @@
       code --install-extension $ext --force
     done
   '';
-  default.openFiles = [ "src/App.tsx" "src/App.ts" "src/App.jsx" "src/App.js" ];
+  default.openFiles = [ "src/App.tsx" "src/App.jsx" ];
 };
 
       onStart = {
-        npm-dev = "npm run dev";
+        # npm-dev = "npm run dev";
       };
       # To run something each time the workspace is (re)started, use the `onStart` hook
     };
