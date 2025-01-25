@@ -14,14 +14,20 @@
     extensions = [
       "esbenp.prettier-vscode"
       "zhuangtongfa.material-theme"
+      "bradlc.vscode-tailwindcss"
     ];
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
-        npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing";
-        # Open editors for the following files by default, if they exist:
-        default.openFiles = [ "src/App.tsx" "src/App.ts" "src/App.jsx" "src/App.js" ];
-      };
+  npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing";
+  install-extensions = ''
+    for ext in esbenp.prettier-vscode zhuangtongfa.material-theme bradlc.vscode-tailwindcss; do
+      code --install-extension $ext --force
+    done
+  '';
+  default.openFiles = [ "src/App.tsx" "src/App.ts" "src/App.jsx" "src/App.js" ];
+};
+
       onStart = {
         npm-dev = "npm run dev";
       };
